@@ -32,8 +32,8 @@
 #  for pkgsrc on NetBSD/i386 6.1.5 and NetBSD/amd64 6.1.5
 #
 # Preparation:
-#  - Install "rpm2cpio" command in pkgsrc/misc/rpm package
-#    by "pkg_add rpm" etc.
+#  - Install "rpm2pkg" command in pkgsrc/pkgtools/rpm package
+#    by "pkg_add rpm2pkg" etc.
 #
 # Build:
 #  - Just type "sh mk-adobe-flash-plugin-packages.sh"
@@ -42,7 +42,7 @@
 #
 # Caveats:
 #  - Dumb idea, poor design and lack of documentation.
-#  - There is few error checks.
+#  - There are few error checks.
 #  - Needs more sane shell script implementation (functions etc).
 #
 
