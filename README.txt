@@ -1,1 +1,20 @@
 Please check desctiption in mk-adobe-flash-plugin-packages.sh script.
+
+Quick procedure:
+
+% su
+# PKG_PATH=http://teokurebsd.org/netbsd/packages/`uname -p`/6.1.5_2014Q4/All pkg_add -v rpm2pkg
+ :
+# exit
+% git clone https://github.com/tsutsui/mk-adobe-flash-plugin-packages
+ :
+% cd mk-adobe-flash-plugin-packages
+% sh mk-adobe-flash-plugin-packages.sh
+ :
+% su
+# PKG_PATH=http://teokurebsd.org/netbsd/packages/`uname -p`/6.1.5_2014Q4/All pkg_add -v `uname -p`/adobe-flash-plugin
+ :
+# exit
+% 
+
+Please also read adobe's readme.txt as prompted by the mk-adobe-flash-plugin-packages.sh script.
