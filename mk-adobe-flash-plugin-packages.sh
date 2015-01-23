@@ -46,7 +46,7 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
-FLASH_VERSION=11.2.202.429
+FLASH_VERSION=11.2.202.438
 
 # check platform and setup platform specific values
 MACHINE_ARCH=`uname -p`
