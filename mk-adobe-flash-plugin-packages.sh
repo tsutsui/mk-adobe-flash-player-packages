@@ -31,6 +31,9 @@
 #  (not redistributable so adobe binaries should be downloaded by users)
 #  for pkgsrc on NetBSD/i386 6.1.5 and NetBSD/amd64 6.1.5
 #
+# Quick procedure:
+#  See README.txt in https://github.com/tsutsui/mk-adobe-flash-plugin-packages
+#
 # Preparation:
 #  - Install "rpm2pkg" command in pkgsrc/pkgtools/rpm package
 #    by "pkg_add rpm2pkg" etc.
