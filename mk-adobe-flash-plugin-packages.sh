@@ -37,6 +37,9 @@
 # Preparation:
 #  - Install "rpm2pkg" command in pkgsrc/pkgtools/rpm package
 #    by "pkg_add rpm2pkg" etc.
+#  - Also install "nspluginwrapper" package in pkgsrc/www/nspluginwrapper
+#    (necessary to determine which Linux binary 64 bit or 32 bit on x86_64
+#     is required)
 #
 # Build:
 #  - Just type "sh mk-adobe-flash-plugin-packages.sh"
@@ -56,12 +59,24 @@ MACHINE_ARCH=`uname -p`
 if [ ${MACHINE_ARCH} = "i386" ]; then
 	FLASH_ARCH=i386
 	FLASH_LIBDIR=lib
+	PKGFILESDIR=pkgfiles
 elif [ ${MACHINE_ARCH} = "x86_64" ]; then
-# no 64bit native wrapper yet?
-#	FLASH_ARCH=x86_64
-#	FLASH_LIBDIR=lib64
+# check nspluginwrapper package is already installed
+NSPLUGINWRAPPERDIR=/usr/pkg/lib/nspluginwrapper
+if [ ! -f ${NSPLUGINWRAPPERDIR}/noarch/npviewer.sh ]; then
+fi
+if [ -x ${NSPLUGINWRAPPERDIR}/x86_64/linux/npviewer.bin ]; then
+	FLASH_ARCH=x86_64
+	FLASH_LIBDIR=lib64
+	PKGFILESDIR=pkgfiles64
+elif [ -x ${NSPLUGINWRAPPERDIR}/i386/linux/npviewer.bin ]; then
 	FLASH_ARCH=i386
 	FLASH_LIBDIR=lib
+	PKGFILESDIR=pkgfiles
+else
+	echo "nspluginwrapper is not installed. Try \"pkg_add nspluginwrapper\" first."
+	exit 1
+fi
 else
 	echo "Error: non-x86 platform?"
 	exit 1
@@ -86,7 +101,6 @@ PKGLIBFLASHPATH=lib/netscape/plugins
 
 PKGFILES="+CONTENTS +COMMENT +DESC +INSTALL +DEINSTALL +BUILD_VERSION +BUILD_INFO +SIZE_PKG +SIZE_ALL"
 
-PKGFILESDIR=${MACHINE_ARCH}/pkgfiles
 DOWNLOADDIR=${MACHINE_ARCH}/download
 WORKDIR=${MACHINE_ARCH}/work
 PACKAGESDIR=${MACHINE_ARCH}
@@ -104,7 +118,7 @@ ${RPM2PKG} -d ${DOWNLOADDIR} ${DISTRPM}
 echo "Creating a packages tgz file using downloaded libflashplayer file..."
 # copy template files into work dir
 mkdir -p ${WORKDIR}
-(cd ${PKGFILESDIR} && pax -rw . ../../${WORKDIR})
+(cd ${MACHINE_ARCH}/${PKGFILESDIR} && pax -rw . ../../${WORKDIR})
 
 # copy necessary shlib into work dir
 cp ${DOWNLOADDIR}/${LIBFLASHPATH}/${LIBFLASH} ${WORKDIR}/${PKGLIBFLASHPATH}
