@@ -1,6 +1,6 @@
 @cwd /usr/pkg
 @pkgcfl ns-flash-[0-9]*
-@name adobe-flash-plugin-11.2.202.442
+@name adobe-flash-plugin-11.2.202.451
 @blddep nspluginwrapper-1.2.2nb26
 @pkgdep nspluginwrapper>0
 @blddep libflashsupport-1.1
@@ -22,7 +22,7 @@
 @blddep digest-20121220
 @comment $NetBSD: PLIST,v 1.1.1.1 2011/11/03 18:14:14 abs Exp $
 lib/netscape/plugins/libflashplayer.so
-@comment MD5:67e0bc342fce8c979d71dd40cf06787c
+@comment MD5:f4246728211333e52132b01164d25dcb
 @cwd /usr/pkg
 @ignore
 +COMMENT
