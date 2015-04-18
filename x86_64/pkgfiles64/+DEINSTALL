@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: header,v 1.2 2006/07/19 22:26:26 jlam Exp $
+# $NetBSD: header,v 1.3 2014/12/30 15:13:20 wiz Exp $
 
 SELF="$0"
 PKGNAME="$1"
@@ -54,27 +54,14 @@ PKGBASE="adobe-flash-plugin"
 
 LOCALBASE="/usr/pkg"
 X11BASE="/usr/X11R7"
-DEPOTBASE="/usr/pkg/packages"
 PREFIX="/usr/pkg"
-case ${PKG_PREFIX} in
-${LOCALBASE}/*)	VIEW="${PKG_PREFIX#${LOCALBASE}/}" ;;
-*)		VIEW="" ;;
-esac
 
 PKG_SYSCONFBASE="/usr/pkg/etc"
-PKG_SYSCONFDEPOTBASE=""
 PKG_SYSCONFBASEDIR="/usr/pkg/etc"
 PKG_SYSCONFDIR="/usr/pkg/etc"
 CONF_DEPENDS=""
 
-case ${VIEW} in
-"")	PKG_SYSCONFVIEWBASE="${PKG_SYSCONFBASE}" ;;
-*)	PKG_SYSCONFVIEWBASE="${PKG_SYSCONFBASE}/${VIEW}" ;;
-esac
-
 CONF_IGNORE_FILES="*[~#] *.OLD *.orig *,v .pkgsrc */.pkgsrc"
-
-PKG_INSTALLATION_TYPE="overwrite"
 
 case "${PKG_CONFIG:-YES}" in
 [Yy][Ee][Ss]|[Tt][Rr][Uu][Ee]|[Oo][Nn]|1)
@@ -82,21 +69,6 @@ case "${PKG_CONFIG:-YES}" in
 	;;
 [Nn][Oo]|[Ff][Aa][Ll][Ss][Ee]|[Oo][Ff][Ff]|0)
 	_PKG_CONFIG=yes
-	;;
-esac
-
-# $NetBSD: deinstall-pre,v 1.1 2006/05/21 23:50:15 jlam Exp $
-
-# Ensure that the VIEW-DEINSTALL action is called for overwrite packages.
-# This is here to ensure that it's the first DEINSTALL action (before
-# any DEINSTALL_TEMPLATE DEINSTALL actions).
-#
-case ${STAGE} in
-DEINSTALL)
-	if [ "${PKG_INSTALLATION_TYPE}" = "overwrite" ]; then
-		${SETENV} PKG_PREFIX="${PKG_PREFIX}" \
-			$0 ${PKGNAME} VIEW-DEINSTALL
-        fi
 	;;
 esac
 
@@ -119,25 +91,10 @@ case $STAGE in
 	done
 	;;
 esac
-# $NetBSD: deinstall,v 1.2 2007/07/18 18:01:03 jlam Exp $
+# $NetBSD: deinstall,v 1.3 2014/12/30 15:13:20 wiz Exp $
 
 case ${STAGE} in
-VIEW-DEINSTALL)
-	case ${_PKG_CONFIG} in
-	yes)
-		case ${PKG_SYSCONFDEPOTBASE} in
-		"")
-			${TEST} ! -x ./+FILES ||
-				./+FILES VIEW-REMOVE ${PREFIX} ${PKG_PREFIX}
-			;;
-		*)
-			${SETENV} PLIST_IGNORE_FILES="${CONF_IGNORE_FILES}" \
-				${LINKFARM} -D -t ${PKG_SYSCONFVIEWBASE} -d ${PKG_SYSCONFDEPOTBASE} ${PKGNAME}
-			${RMDIR} -p ${PKG_SYSCONFVIEWBASE} 2>/dev/null || ${TRUE}
-			;;
-		esac
-		;;
-	esac
+DEINSTALL)
 	#
 	# Unregister info files.
 	#
@@ -150,9 +107,7 @@ VIEW-DEINSTALL)
 		./+SHELL REMOVE ${PKG_METADATA_DIR}
 	${TEST} ! -x ./+SHELL ||
 		./+SHELL CHECK-REMOVE ${PKG_METADATA_DIR}
-	;;
 
-DEINSTALL)
 	# Remove configuration files if they don't differ from the default
 	# config file.
 	#
@@ -161,13 +116,6 @@ DEINSTALL)
 	;;
 
 POST-DEINSTALL)
-	if [ "${PKG_INSTALLATION_TYPE}" = "pkgviews" -a			\
-	     "${_PKG_CONFIG}" = "yes" -a -n "${CONF_DEPENDS}" ]; then
-		if [ -h ${PKG_SYSCONFDIR} ]; then
-			${RM} -f ${PKG_SYSCONFDIR}
-		fi
-		${RMDIR} -p `${DIRNAME} ${PKG_SYSCONFDIR}` 2>/dev/null || ${TRUE}
-	fi
 	#
 	# Update any fonts databases.
 	#
