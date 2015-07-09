@@ -56,6 +56,7 @@ FLASH_VERSION=11.2.202.481
 
 # check platform and setup platform specific values
 MACHINE_ARCH=`uname -p`
+RELEASE=`uname -r`
 if [ ${MACHINE_ARCH} = "i386" ]; then
 	FLASH_ARCH=i386
 	FLASH_LIBDIR=lib
@@ -118,7 +119,7 @@ ${RPM2PKG} -d ${DOWNLOADDIR} ${DISTRPM}
 echo "Creating a packages tgz file using downloaded libflashplayer file..."
 # copy template files into work dir
 mkdir -p ${WORKDIR}
-(cd ${MACHINE_ARCH}/${PKGFILESDIR} && pax -rw . ../../${WORKDIR})
+(cd ${MACHINE_ARCH}/${RELEASE}/${PKGFILESDIR} && pax -rw . ../../../${WORKDIR})
 
 # copy necessary shlib into work dir
 cp ${DOWNLOADDIR}/${LIBFLASHPATH}/${LIBFLASH} ${WORKDIR}/${PKGLIBFLASHPATH}
