@@ -29,7 +29,7 @@
 # What's this?
 #  A dumb script to create adobe-flash-plugin11 binary packages
 #  (not redistributable so adobe binaries should be downloaded by users)
-#  for pkgsrc on NetBSD/i386 6.1.5 and NetBSD/amd64 6.1.5
+#  for pkgsrc on NetBSD/i386 7.0_RC*/6.1.5 and NetBSD/amd64 7.0_RC*/6.1.5
 #
 # Quick procedure:
 #  See README.txt in https://github.com/tsutsui/mk-adobe-flash-plugin-packages
@@ -52,7 +52,7 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
-FLASH_VERSION=11.2.202.491
+FLASH_VERSION=11.2.202.508
 
 # check platform and setup platform specific values
 MACHINE_ARCH=`uname -p`
