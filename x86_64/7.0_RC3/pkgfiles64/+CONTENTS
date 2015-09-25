@@ -1,28 +1,28 @@
 @cwd /usr/pkg
 @pkgcfl ns-flash-[0-9]*
-@name adobe-flash-plugin-11.2.202.508
+@name adobe-flash-plugin-11.2.202.521
 @blddep nspluginwrapper-1.4.4
 @pkgdep nspluginwrapper>=1.4.4
 @blddep libflashsupport-4.2.2011
 @pkgdep libflashsupport>=4.2.2011
-@blddep suse_gtk2-13.1nb6
+@blddep suse_gtk2-13.1nb7
 @pkgdep suse_gtk2>=13.1<13.2
-@blddep suse_x11-13.1nb5
+@blddep suse_x11-13.1nb6
 @pkgdep suse_x11>=13.1<13.2
-@blddep suse_krb5-13.1nb2
+@blddep suse_krb5-13.1nb3
 @pkgdep suse_krb5>=13.1<13.2
 @blddep suse_alsa-13.1nb2
 @pkgdep suse_alsa>=13.1<13.2
-@blddep suse_libcurl-13.1nb5
+@blddep suse_libcurl-13.1nb6
 @pkgdep suse_libcurl>=13.1<13.2
-@blddep suse_mozilla-nss-13.1nb4
+@blddep suse_mozilla-nss-13.1nb5
 @pkgdep suse_mozilla-nss>=13.1<13.2
-@blddep suse_mozilla-nspr-13.1nb3
+@blddep suse_mozilla-nspr-13.1nb4
 @pkgdep suse_mozilla-nspr>=13.1<13.2
 @blddep digest-20121220
 @comment $NetBSD: PLIST,v 1.1.1.1 2011/11/03 18:14:14 abs Exp $
 lib/netscape/plugins/libflashplayer.so
-@comment MD5:6548c5b12b04c6637de392c09616885e
+@comment MD5:bf65cc6bb862a6117f21b618f8c98a60
 @cwd /usr/pkg
 @ignore
 +COMMENT
