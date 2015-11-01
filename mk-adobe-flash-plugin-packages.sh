@@ -53,6 +53,7 @@
 #
 
 FLASH_VERSION=11.2.202.540
+PKGREVISION=1
 
 # check platform and setup platform specific values
 MACHINE_ARCH=`uname -p`
@@ -62,22 +63,9 @@ if [ ${MACHINE_ARCH} = "i386" ]; then
 	FLASH_LIBDIR=lib
 	PKGFILESDIR=pkgfiles
 elif [ ${MACHINE_ARCH} = "x86_64" ]; then
-# check nspluginwrapper package is already installed
-NSPLUGINWRAPPERDIR=/usr/pkg/lib/nspluginwrapper
-if [ ! -f ${NSPLUGINWRAPPERDIR}/noarch/npviewer.sh ]; then
-fi
-if [ -x ${NSPLUGINWRAPPERDIR}/x86_64/linux/npviewer.bin ]; then
 	FLASH_ARCH=x86_64
 	FLASH_LIBDIR=lib64
 	PKGFILESDIR=pkgfiles64
-elif [ -x ${NSPLUGINWRAPPERDIR}/i386/linux/npviewer.bin ]; then
-	FLASH_ARCH=i386
-	FLASH_LIBDIR=lib
-	PKGFILESDIR=pkgfiles
-else
-	echo "nspluginwrapper is not installed. Try \"pkg_add nspluginwrapper\" first."
-	exit 1
-fi
 else
 	echo "Error: non-x86 platform?"
 	exit 1
@@ -90,7 +78,11 @@ if [ ! -x ${RPM2PKG} ]; then
 	exit 1
 fi
 
-PKGNAME=adobe-flash-plugin-${FLASH_VERSION}
+if [ ${PKGREVISION}x = "x" -o ${PKGREVISION}x = "0x" ]; then
+	PKGNAME=adobe-flash-plugin-${FLASH_VERSION}
+else
+	PKGNAME=adobe-flash-plugin-${FLASH_VERSION}nb${PKGREVISION}
+fi
 DISTNAME=flash-plugin-${FLASH_VERSION}-release.${FLASH_ARCH}
 EXTRACT_SUFX=.rpm
 MASTER_SITES=http://fpdownload.macromedia.com/get/flashplayer/pdc/${FLASH_VERSION}/

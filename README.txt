@@ -3,7 +3,7 @@ Please check desctiption in mk-adobe-flash-plugin-packages.sh script.
 Quick procedure:
 
 % su
-# PKG_PATH=http://teokurebsd.org/netbsd/packages/`uname -p`/`uname -r`_2015Q3/All pkg_add -v rpm2pkg nspluginwrapper
+# PKG_PATH=http://teokurebsd.org/netbsd/packages/`uname -p`/`uname -r`_2015Q3/All pkg_add -v rpm2pkg
  :
 # exit
 % git clone https://github.com/tsutsui/mk-adobe-flash-plugin-packages

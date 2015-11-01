@@ -1,6 +1,6 @@
 @cwd /usr/pkg
 @pkgcfl ns-flash-[0-9]*
-@name adobe-flash-plugin-11.2.202.540
+@name adobe-flash-plugin-11.2.202.540nb1
 @blddep nspluginwrapper-1.4.4
 @pkgdep nspluginwrapper>=1.4.4
 @blddep libflashsupport-4.2.2011
