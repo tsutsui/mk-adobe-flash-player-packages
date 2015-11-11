@@ -52,8 +52,8 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
-FLASH_VERSION=11.2.202.540
-PKGREVISION=1
+FLASH_VERSION=11.2.202.548
+PKGREVISION=
 
 # check platform and setup platform specific values
 MACHINE_ARCH=`uname -p`
