@@ -52,7 +52,7 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
-FLASH_VERSION=11.2.202.548
+FLASH_VERSION=11.2.202.554
 PKGREVISION=
 
 # check platform and setup platform specific values
