@@ -1,9 +1,9 @@
 ABI=
-BUILD_DATE=2015-09-26 12:00:00 +0900
+BUILD_DATE=2016-02-20 06:03:40 +0900
 BUILD_HOST=NetBSD Amnesiac 6.1.5 NetBSD 6.1.5 (GENERIC) i386
 CATEGORIES=multimedia www
 CC_VERSION=gcc-4.5.3
-CFLAGS=-O2
+CFLAGS=-O2 
 CMAKE_ARGS=
 CONFIGURE_ARGS=
 CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/lib/pkgconfig:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.pkg-config.log PKG_CONFIG_PATH= MAKE=make WRAPPER_DEBUG=no WRAPPER_UPDATE_CACHE=yes CC=gcc CFLAGS=-O2 CPPFLAGS= CXX=c++ CXXFLAGS=-O2 COMPILER_RPATH_FLAG=-Wl,-R F77=g77 FC=g77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-R/usr/pkg/lib LINKER_RPATH_FLAG=-R PATH=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.wrapper/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.gcc/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.tools/bin:/usr/pkg/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg MAKELEVEL=0 PKG_SYSCONFDIR=/usr/pkg/etc CXXCPP=cpp HOME=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.home
