@@ -3,7 +3,8 @@ Please check desctiption in mk-adobe-flash-plugin-packages.sh script.
 Quick procedure:
 
 % su
-# PKG_PATH=http://teokurebsd.org/netbsd/packages/`uname -p`/`uname -r`/All pkg_add -v rpm2pkg git-base mozilla-rootcerts
+# export PKG_PATH=http://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/`uname -p`/`uname -r`/All
+# pkg_add -v rpm2pkg git-base mozilla-rootcerts
  :
 # exit
 % git clone https://github.com/tsutsui/mk-adobe-flash-plugin-packages
@@ -12,7 +13,8 @@ Quick procedure:
 % sh mk-adobe-flash-plugin-packages.sh
  :
 % su
-# PKG_PATH=http://teokurebsd.org/netbsd/packages/`uname -p`/`uname -r`/All pkg_add -v `uname -p`/adobe-flash-plugin
+# export PKG_PATH=http://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/`uname -p`/`uname -r`/All
+pkg_add -v `uname -p`/adobe-flash-plugin
  :
 # exit
 % 
