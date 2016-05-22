@@ -1,5 +1,5 @@
 ABI=
-BUILD_DATE=2016-04-11 03:17:44 +0900
+BUILD_DATE=2016-05-23 03:55:36 +0900
 BUILD_HOST=NetBSD Amnesiac 6.1.5 NetBSD 6.1.5 (GENERIC) i386
 CATEGORIES=multimedia www
 CC_VERSION=gcc-4.5.3
@@ -10,7 +10,7 @@ CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/usr/obj.i386/pkgsrc/multimedia/adobe-flash
 CPPFLAGS=  
 FFLAGS=-O
 HOMEPAGE=http://www.adobe.com/products/flashplayer.html
-LDFLAGS=  -Wl,-R/usr/pkg/lib
+LDFLAGS=   -Wl,-R/usr/pkg/lib
 LICENSE=flash-license
 LOCALBASE=/usr/pkg
 MACHINE_ARCH=i386
