@@ -85,7 +85,8 @@ else
 fi
 DISTNAME=flash-plugin-${FLASH_VERSION}-release.${FLASH_ARCH}
 EXTRACT_SUFX=.rpm
-MASTER_SITES=http://fpdownload.macromedia.com/get/flashplayer/pdc/${FLASH_VERSION}/
+#MASTER_SITES=http://fpdownload.macromedia.com/get/flashplayer/pdc/${FLASH_VERSION}/
+MASTER_SITES=http://ftp.vinelinux.org/pub/Vine/VineSeed/${FLASH_ARCH}/RPMS.nonfree/
 DISTRPM=${DISTNAME}${EXTRACT_SUFX}
 
 LIBFLASH=libflashplayer.so
