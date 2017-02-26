@@ -1,12 +1,12 @@
 ABI=
-BUILD_DATE=2016-11-13 23:30:09 +0900
-BUILD_HOST=NetBSD optiplex 7.0.2 NetBSD 7.0.2 (GENERIC.201610210724Z) i386
+BUILD_DATE=2017-02-26 09:54:48 +0900
+BUILD_HOST=NetBSD optiplex 7.1_RC2 NetBSD 7.1_RC2 (GENERIC.201702210739Z) i386
 CATEGORIES=multimedia www
-CC_VERSION=gcc-4.8.4
+CC_VERSION=gcc-4.8.5
 CFLAGS=-O2 
 CMAKE_ARGS=
 CONFIGURE_ARGS=
-CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/lib/pkgconfig:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.pkg-config.log PKG_CONFIG_PATH= MAKE=make WRAPPER_DEBUG=no WRAPPER_UPDATE_CACHE=yes CC=gcc CFLAGS=-O2 CPPFLAGS= CXX=c++ CXXFLAGS=-O2 COMPILER_RPATH_FLAG=-Wl,-R F77=g77 FC=g77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-R/usr/pkg/lib LINKER_RPATH_FLAG=-R PATH=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.wrapper/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.gcc/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.tools/bin:/usr/pkg/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg MAKELEVEL=0 CONFIG_SITE= PKG_SYSCONFDIR=/usr/pkg/etc CXXCPP=cpp HOME=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.home
+CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/lib/pkgconfig:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.pkg-config.log PKG_CONFIG_PATH= MAKE=make CWRAPPERS_CONFIG_DIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.cwrapper/config CC=gcc CFLAGS=-O2 CPPFLAGS= CXX=c++ CXXFLAGS=-O2 COMPILER_RPATH_FLAG=-Wl,-R F77=g77 FC=g77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-R/usr/pkg/lib LINKER_RPATH_FLAG=-R PATH=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.cwrapper/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.buildlink/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.gcc/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.tools/bin:/usr/pkg/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg MAKELEVEL=0 CONFIG_SITE= PKG_SYSCONFDIR=/usr/pkg/etc CXXCPP=cpp HOME=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.home CWRAPPERS_CONFIG_DIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-plugin11/work.i386/.cwrapper/config
 CPPFLAGS=  
 FFLAGS=-O
 HOMEPAGE=http://www.adobe.com/products/flashplayer.html
@@ -22,7 +22,7 @@ NO_SRC_ON_CDROM=Redistribution not permitted
 NO_SRC_ON_FTP=Redistribution not permitted
 OBJECT_FMT=ELF
 OPSYS=NetBSD
-OS_VERSION=7.0.2
+OS_VERSION=7.1_RC2
 PKGGNUDIR=gnu/
 PKGINFODIR=info
 PKGMANDIR=man

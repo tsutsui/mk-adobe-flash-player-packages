@@ -1,0 +1,6 @@
+multimedia/adobe-flash-player24/INSTALL.nspluginwrapper:	$NetBSD: INSTALL.nspluginwrapper,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
+multimedia/adobe-flash-player24/MESSAGE.pulseaudio:	$NetBSD: MESSAGE.pulseaudio,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
+multimedia/adobe-flash-player24/Makefile:	$NetBSD: Makefile,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
+multimedia/adobe-flash-player24/PLIST:	$NetBSD: PLIST,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
+multimedia/adobe-flash-player24/distinfo:	$NetBSD: distinfo,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
+multimedia/adobe-flash-player24/options.mk:	$NetBSD: options.mk,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
