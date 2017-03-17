@@ -54,7 +54,7 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
-FLASH_VERSION24=24.0.0.221
+FLASH_VERSION24=25.0.0.127
 PKGREVISION24=
 
 FLASH_VERSION11=11.2.202.644
@@ -75,7 +75,7 @@ else
 	echo "Error: non-x86 platform?"
 	exit 1
 fi
-if [ ${RELEASE} = "7.0" -o ${RELEASE} = "7.1_RC1" \
+if [ ${RELEASE} = "7.0" -o ${RELEASE} = "7.0.1" -o ${RELEASE} = "7.0.2" \
     -o ${RELEASE} = "6.1.5" ]; then
 	FLASH_VERSION=${FLASH_VERSION11}
 	PKGREVISION=${PKGREVISION11}

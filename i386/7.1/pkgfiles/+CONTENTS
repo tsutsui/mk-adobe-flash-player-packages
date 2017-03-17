@@ -1,6 +1,6 @@
 @cwd /usr/pkg
 @pkgcfl adobe-flash-plugin-[0-9]*
-@name adobe-flash-player-24.0.0.221
+@name adobe-flash-player-25.0.0.127
 @blddep nspluginwrapper-1.4.4nb5
 @pkgdep nspluginwrapper>=1.4.4
 @blddep libflashsupport-4.2.2011
@@ -23,9 +23,9 @@
 @pkgdep suse_mozilla-nspr>=13.1<13.2
 @blddep digest-20160304
 @blddep cwrappers-20161125
-@comment $NetBSD: PLIST,v 1.1 2017/02/24 18:33:38 tsutsui Exp $
+@comment $NetBSD: PLIST,v 1.1 2017/03/17 21:56:29 tsutsui Exp $
 lib/netscape/plugins/libflashplayer.so
-@comment MD5:3544567fc474a3e75039abb90cb4208d
+@comment MD5:441a7198d52deddd8d3576cd3aa2c92a
 @cwd /usr/pkg
 @ignore
 +COMMENT
