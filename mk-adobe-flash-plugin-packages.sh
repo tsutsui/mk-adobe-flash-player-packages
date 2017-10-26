@@ -75,6 +75,10 @@ else
 	echo "Error: non-x86 platform?"
 	exit 1
 fi
+if [ ! -d ${MACHINE_ARCH}/${RELEASE} ]; then
+	echo "NetBSD ${RELEASE} is not supported"
+	exit 1
+fi
 if [ ${RELEASE} = "7.0" -o ${RELEASE} = "7.0.1" -o ${RELEASE} = "7.0.2" \
     -o ${RELEASE} = "6.1.5" ]; then
 	FLASH_VERSION=${FLASH_VERSION11}
