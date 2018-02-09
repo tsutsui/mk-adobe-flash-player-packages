@@ -54,7 +54,7 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
-FLASH_VERSION=28.0.0.137
+FLASH_VERSION=28.0.0.161
 PKGREVISION=
 
 FLASH_VERSION11=11.2.202.644
