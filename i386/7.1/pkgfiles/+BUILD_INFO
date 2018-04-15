@@ -1,12 +1,12 @@
 ABI=
-BUILD_DATE=2018-03-16 01:58:06 +0900
-BUILD_HOST=NetBSD optiplex 7.1.1 NetBSD 7.1.1 (GENERIC.201712222334Z) i386
+BUILD_DATE=2018-04-15 11:58:36 +0900
+BUILD_HOST=NetBSD optiplex 7.1.2 NetBSD 7.1.2 (GENERIC.201803151611Z) i386
 CATEGORIES=multimedia www
 CC_VERSION=gcc-4.8.5
 CFLAGS=-O2 -D_FORTIFY_SOURCE=2
 CMAKE_ARGS=
 CONFIGURE_ARGS=
-CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.buildlink/lib/pkgconfig:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.pkg-config.log PKG_CONFIG_PATH= MAKE=make CWRAPPERS_CONFIG_DIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.cwrapper/config CC=gcc CFLAGS=-O2\ -D_FORTIFY_SOURCE=2 CPPFLAGS= CXX=c++ CXXFLAGS=-O2\ -D_FORTIFY_SOURCE=2 COMPILER_RPATH_FLAG=-Wl,-R F77=g77 FC=g77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-R/usr/pkg/lib LINKER_RPATH_FLAG=-R PATH=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.cwrapper/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.buildlink/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.gcc/bin:/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.tools/bin:/usr/pkg/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg MAKELEVEL=0 CONFIG_SITE= PKG_SYSCONFDIR=/usr/pkg/etc CXXCPP=cpp HOME=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.home CWRAPPERS_CONFIG_DIR=/usr/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.cwrapper/config
+CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.buildlink/lib/pkgconfig:/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.pkg-config.log PKG_CONFIG_PATH= MAKE=make CWRAPPERS_CONFIG_DIR=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.cwrapper/config CC=gcc CFLAGS=-O2\ -D_FORTIFY_SOURCE=2 CPPFLAGS= CXX=c++ CXXFLAGS=-O2\ -D_FORTIFY_SOURCE=2 COMPILER_RPATH_FLAG=-Wl,-R F77=g77 FC=g77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-R/usr/pkg/lib LINKER_RPATH_FLAG=-R PATH=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.cwrapper/bin:/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.buildlink/bin:/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.gcc/bin:/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.tools/bin:/usr/pkg/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg MAKELEVEL=0 CONFIG_SITE= PKG_SYSCONFDIR=/usr/pkg/etc CXXCPP=cpp HOME=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.home CWRAPPERS_CONFIG_DIR=/s/obj.i386/pkgsrc/multimedia/adobe-flash-player/work.i386/.cwrapper/config
 CPPFLAGS=  
 FFLAGS=-O
 HOMEPAGE=https://www.adobe.com/products/flashplayer.html
@@ -22,7 +22,7 @@ NO_SRC_ON_CDROM=Redistribution not permitted
 NO_SRC_ON_FTP=Redistribution not permitted
 OBJECT_FMT=ELF
 OPSYS=NetBSD
-OS_VERSION=7.1.1
+OS_VERSION=7.1.2
 PKGGNUDIR=gnu/
 PKGINFODIR=info
 PKGMANDIR=man
