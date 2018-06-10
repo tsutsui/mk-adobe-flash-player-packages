@@ -54,6 +54,12 @@
 #  - Needs more sane shell script implementation (functions etc).
 #
 
+err()
+{
+	echo $1
+	exit 1
+}
+
 FLASH_VERSION=30.0.0.113
 PKGREVISION=
 
@@ -130,14 +136,17 @@ rm -rf ${WORKDIR}
 
 echo "Downloading a libflashplayer archive from adobe site..."
 mkdir -p ${DOWNLOADDIR}
-ftp -o ${DOWNLOADDIR}/${DISTFILE} ${MASTER_SITES}${DISTFILE}
+ftp -o ${DOWNLOADDIR}/${DISTFILE} ${MASTER_SITES}${DISTFILE} || \
+    err "Error: fetching ${DISTFILE} from ${MASTER_SITES} failed."
 
 echo "Extracting libflashplayer files from distfile..."
 if [ "${FLASH_VERSION}" = "${FLASH_VERSION11}" ]; then
 	unzip -q -d ${DOWNLOADDIR} ${DOWNLOADDIR}/${DISTFILE}
-	tar -C ${DOWNLOADDIR} -zxf ${DOWNLOADDIR}/${FP_ARCHIVE_DIR}/${FP_ARCHIVE}
+	tar -C ${DOWNLOADDIR} -zxf ${DOWNLOADDIR}/${FP_ARCHIVE_DIR}/${FP_ARCHIVE} || \
+	    err "Error: extracting ${DISTFILE} failed."
 else
-	tar -C ${DOWNLOADDIR} -zxf ${DOWNLOADDIR}/${DISTFILE}
+	tar -C ${DOWNLOADDIR} -zxf ${DOWNLOADDIR}/${DISTFILE} || \
+	    err "Error: extracting ${DISTFILE} failed."
 fi
 
 echo "Creating a packages tgz file using downloaded libflashplayer file..."
@@ -149,8 +158,9 @@ mkdir -p ${WORKDIR}
 cp ${DOWNLOADDIR}/${LIBFLASH} ${WORKDIR}/${PKGLIBFLASHPATH}
 
 # create .tgz package file
-GZIP=-9 tar -zcf ${PACKAGESDIR}/${PKGNAME}.tgz -C ${WORKDIR} \
-	${PKGFILES} ${PKGLIBFLASHPATH}/${LIBFLASH}
+GZIP=-9 tar -zcvf ${PACKAGESDIR}/${PKGNAME}.tgz -C ${WORKDIR} \
+	${PKGFILES} ${PKGLIBFLASHPATH}/${LIBFLASH} || \
+	    err "Error: creating ${PKGNAME}.tgz failed."
 
 # complete.
 echo "Done."
