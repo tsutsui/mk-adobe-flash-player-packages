@@ -24,15 +24,16 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #
-# mk-adobe-flash-plugin-packages.sh
+# mk-adobe-flash-player-packages.sh
 #
 # What's this?
-#  A dumb script to create adobe-flash-plugin11 binary packages
+#  A dumb script to create adobe-flash-player binary packages
 #  (not redistributable so adobe binaries should be downloaded by users)
-#  for pkgsrc on NetBSD/i386 7.*/6.1.5 and NetBSD/amd64 7.*/6.1.5
+#  for pkgsrc on NetBSD/i386 7.1/8.0 and NetBSD/amd64 7.1/8.0
+#  (adobe-flash-plugin11 is also supported for 7.0/6.1.5 but not well-tested)
 #
 # Quick procedure:
-#  See README.txt in https://github.com/tsutsui/mk-adobe-flash-plugin-packages
+#  See README.txt in https://github.com/tsutsui/mk-adobe-flash-player-packages
 #
 # Preparation:
 #  - Install "nspluginwrapper" package in pkgsrc/www/nspluginwrapper
@@ -43,7 +44,7 @@
 #    by "pkg_add unzip" etc.
 #
 # Build:
-#  - Just type "sh mk-adobe-flash-plugin-packages.sh"
+#  - Just type "sh mk-adobe-flash-player-packages.sh"
 #    then ${MACHINE_ARCH}/adobe-flash-player-${FLASH_VERSION}.tgz
 #    (or ${MACHINE_ARCH}/adobe-flash-plugin-${FLASH_VERSION}.tgz)
 #    will be created.

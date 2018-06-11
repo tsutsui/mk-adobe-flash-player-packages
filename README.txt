@@ -1,4 +1,4 @@
-Please check desctiption in mk-adobe-flash-plugin-packages.sh script.
+Please check desctiption in mk-adobe-flash-player-packages.sh script.
 
 Quick procedure:
 
@@ -8,10 +8,10 @@ Quick procedure:
 # /usr/pkg/sbin/mozilla-rootcerts install
  :
 # exit
-% git clone https://github.com/tsutsui/mk-adobe-flash-plugin-packages
+% git clone https://github.com/tsutsui/mk-adobe-flash-player-packages
  :
-% cd mk-adobe-flash-plugin-packages
-% sh mk-adobe-flash-plugin-packages.sh
+% cd mk-adobe-flash-player-packages
+% sh mk-adobe-flash-player-packages.sh
  :
 % su
 # export PKG_PATH=http://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/`uname -p`/`uname -r`/All
@@ -21,4 +21,4 @@ Quick procedure:
 # exit
 % 
 
-Please also read adobe's readme.txt as prompted by the mk-adobe-flash-plugin-packages.sh script.
+Please also read adobe's readme.txt as prompted by the mk-adobe-flash-player-packages.sh script.
