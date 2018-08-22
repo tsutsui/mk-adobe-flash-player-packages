@@ -1,6 +1,6 @@
 ABI=
-BUILD_DATE=2018-07-11 22:46:33 +0900
-BUILD_HOST=NetBSD optiplex 8.0_RC2 NetBSD 8.0_RC2 (GENERIC) #0: Mon Jun 25 13:01:26 UTC 2018  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC amd64
+BUILD_DATE=2018-08-22 22:58:16 +0900
+BUILD_HOST=NetBSD optiplex 8.0 NetBSD 8.0 (GENERIC) #0: Tue Jul 17 14:59:51 UTC 2018  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC amd64
 CATEGORIES=multimedia www
 CC_VERSION=gcc-5.5.0
 CFLAGS=-O2 -D_FORTIFY_SOURCE=2
@@ -22,7 +22,7 @@ NO_SRC_ON_CDROM=Redistribution not permitted
 NO_SRC_ON_FTP=Redistribution not permitted
 OBJECT_FMT=ELF
 OPSYS=NetBSD
-OS_VERSION=8.0_RC2
+OS_VERSION=8.0
 PKGGNUDIR=gnu/
 PKGINFODIR=info
 PKGMANDIR=man
