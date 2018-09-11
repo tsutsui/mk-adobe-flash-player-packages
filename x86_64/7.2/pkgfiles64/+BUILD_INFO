@@ -1,0 +1,36 @@
+ABI=
+BUILD_DATE=2018-09-12 01:18:36 +0900
+BUILD_HOST=NetBSD optiplex760 7.2 NetBSD 7.2 (GENERIC.201808291900Z) amd64
+CATEGORIES=multimedia www
+CC_VERSION=gcc-4.8.5
+CFLAGS=-O2 -D_FORTIFY_SOURCE=2
+CMAKE_ARGS=
+CONFIGURE_ARGS=
+CONFIGURE_ENV=INSTALL_INFO= MAKEINFO=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.buildlink/lib/pkgconfig:/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.pkg-config.log PKG_CONFIG_PATH= MAKE=make CWRAPPERS_CONFIG_DIR=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.cwrapper/config CC=gcc CFLAGS=-O2\ -D_FORTIFY_SOURCE=2 CPPFLAGS= CXX=c++ CXXFLAGS=-O2\ -D_FORTIFY_SOURCE=2 COMPILER_RPATH_FLAG=-Wl,-R F77=g77 FC=g77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-R/usr/pkg/lib LINKER_RPATH_FLAG=-R PATH=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.cwrapper/bin:/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.buildlink/bin:/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.gcc/bin:/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.tools/bin:/usr/pkg/bin:/home/tsutsui/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg MAKELEVEL=0 CONFIG_SITE= PKG_SYSCONFDIR=/usr/pkg/etc CXXCPP=cpp HOME=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.home CWRAPPERS_CONFIG_DIR=/usr/obj.x86_64/pkgsrc/multimedia/adobe-flash-player/work.x86_64/.cwrapper/config
+CPPFLAGS=  
+FFLAGS=-O
+HOMEPAGE=https://www.adobe.com/products/flashplayer.html
+LDFLAGS=   -Wl,-R/usr/pkg/lib
+LICENSE=flash-license
+LOCALBASE=/usr/pkg
+MACHINE_ARCH=x86_64
+MACHINE_GNU_ARCH=x86_64
+MAINTAINER=tsutsui@NetBSD.org
+NO_BIN_ON_CDROM=Redistribution not permitted
+NO_BIN_ON_FTP=Redistribution not permitted
+NO_SRC_ON_CDROM=Redistribution not permitted
+NO_SRC_ON_FTP=Redistribution not permitted
+OBJECT_FMT=ELF
+OPSYS=NetBSD
+OS_VERSION=7.2
+PKGGNUDIR=gnu/
+PKGINFODIR=info
+PKGMANDIR=man
+PKGPATH=multimedia/adobe-flash-player
+PKGTOOLS_VERSION=20091115
+PKG_OPTIONS=nspluginwrapper
+PKG_SYSCONFBASEDIR=/usr/pkg/etc
+PKG_SYSCONFDIR=/usr/pkg/etc
+RESTRICTED=Redistribution not permitted
+_PLIST_IGNORE_FILES=
+_USE_DESTDIR=user-destdir
