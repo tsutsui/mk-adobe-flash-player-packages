@@ -1,5 +1,5 @@
 ABI=
-BUILD_DATE=2019-02-12 23:31:34 +0900
+BUILD_DATE=2019-02-13 00:27:56 +0900
 BUILD_HOST=NetBSD optiplex 8.0 NetBSD 8.0 (GENERIC) #0: Tue Jul 17 14:59:51 UTC 2018  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC i386
 CATEGORIES=multimedia www
 CC_VERSION=gcc-5.5.0

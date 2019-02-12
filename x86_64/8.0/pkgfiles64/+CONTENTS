@@ -1,6 +1,6 @@
 @cwd /usr/pkg
 @pkgcfl adobe-flash-plugin-[0-9]*
-@name adobe-flash-player-32.0.0.114
+@name adobe-flash-player-32.0.0.142
 @blddep nspluginwrapper-1.4.4nb18
 @pkgdep nspluginwrapper>=1.4.4
 @blddep libflashsupport-4.2.2011
@@ -25,7 +25,7 @@
 @blddep cwrappers-20180325
 @comment $NetBSD: PLIST,v 1.1 2017/03/17 21:56:29 tsutsui Exp $
 lib/netscape/plugins/libflashplayer.so
-@comment MD5:58bc22fe1e82900179cab7a552716391
+@comment MD5:767d2fef81869a2c05e148ac77d8069f
 @cwd /usr/pkg
 @ignore
 +COMMENT
