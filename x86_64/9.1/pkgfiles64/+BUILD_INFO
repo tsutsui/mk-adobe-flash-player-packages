@@ -1,8 +1,8 @@
 ABI=
-BUILD_DATE=2020-09-13 03:16:15 +0900
-BUILD_HOST=NetBSD optiplex 9.0 NetBSD 9.0 (GENERIC) #0: Fri Feb 14 00:06:28 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC amd64
+BUILD_DATE=2020-10-27 02:50:58 +0900
+BUILD_HOST=NetBSD optiplex 9.1 NetBSD 9.1 (GENERIC) #0: Sun Oct 18 19:24:30 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC amd64
 CATEGORIES=multimedia www
-CC_VERSION=gcc-7.4.0
+CC_VERSION=gcc-7.5.0
 CFLAGS=-O2 -D_FORTIFY_SOURCE=2
 CMAKE_ARGS=
 CONFIGURE_ARGS=
@@ -22,7 +22,7 @@ NO_SRC_ON_CDROM=Redistribution not permitted
 NO_SRC_ON_FTP=Redistribution not permitted
 OBJECT_FMT=ELF
 OPSYS=NetBSD
-OS_VERSION=9.0
+OS_VERSION=9.1
 PKGGNUDIR=gnu/
 PKGINFODIR=info
 PKGMANDIR=man
